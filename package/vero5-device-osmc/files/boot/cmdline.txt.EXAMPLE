@@ -27,3 +27,9 @@
 #
 # Multiple arguments can be combined:
 # user_bootargs=loglevel=7 skip_sd_probe=1
+
+# Enable initcall debug tracing (logs timing of each driver init call):
+# user_bootargs=initcall_debug=1
+#
+# Combined with verbose logging for full early boot debug output:
+# user_bootargs=loglevel=7 initcall_debug=1
