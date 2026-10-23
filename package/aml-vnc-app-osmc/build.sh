@@ -20,6 +20,8 @@ then
 	handle_dep libvncserver-dev
 	handle_dep libpng-dev
 	handle_dep libssl-dev
+	handle_dep libdrm-dev
+	handle_dep pkg-config
 	mkdir -p files/etc/osmc/apps.d
 	echo "Package: ${1}-aml-vnc-app-osmc" >> files/DEBIAN/control && APP_FILE="files/etc/osmc/apps.d/${1}-aml-vnc-app-osmc"
 	echo -e "VNC Server\naml-vnc.service" > $APP_FILE
